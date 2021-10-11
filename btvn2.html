@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text" href="../CSS/btvn2.css">
+    
+</head>
+<body>
+    <div class="main">
+        <form action="" method="POST" class="form" id="form-1">
+            <h3 class="heading">Register</h3>
+            <p class="desc">Đăng ký để nhận nhiều ưu đãi hơn</p>
+            <!-- Miếng đệm -->
+            <div class="spacer"></div>
+
+            <div class="form-group">
+                <label for="fullname" class="form-label">Tên đầy đủ</label>
+                <input type="text" id="fullname" name="fullname" placeholder="VD: Công Nguyễn" class="form-control">
+                <span class="form-message"></span>
+                <!-- message chỉ hiển thị khi có lỗi -->
+            </div>
+            <!-- Phàn điền số điện thoại -->
+            <div class="form-group">
+                <label for="number" class="form-label">SĐT</label>
+                <input id="number" name="number" type="text" placeholder="VD: 1234567890" class="form-control">
+                <span class="form-message"></span>
+            </div>
+            <!-- Phần điền email -->
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" name="email" type="text" placeholder="VD: tengi@gmail.com" class="form-control">
+                <span class="form-message"></span>
+            </div>
+            <!-- Nhập mật khẩu -->
+            <div class="form-group">
+                <label for="password" class="form-label">Mật khẩu</label>
+                <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                <span class="form-message"></span>
+            </div>
+            <!-- Nhập lại mật khẩu -->
+            <div class="form-group">
+                <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
+                <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <button class="form-submit">Đăng ký</button>
+        </form>
+    </div>
+
+    <script src="./main.js"></script>
+    <script>
+        // Mong muốn của chúng ta khi sử dụng
+        Validator({
+            form: '#form-1',
+            rules: [
+                Validator.isRequire('#fullname'),
+                Validator.isEmail('#email'),
+                Validator.isPhone('#number'),
+                Validator.isPassWord('#password'),
+                Validator.isPasswordConfirmation('#password_confirmation'),
+            ]
+        })
+
+    </script>
+
+
+
+</body>
+</html>
