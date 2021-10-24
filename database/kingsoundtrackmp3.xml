@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.1.1
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Oct 24, 2021 at 04:56 AM
+- Server version: 10.4.21-MariaDB
+- PHP Version: 8.0.11
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="kingsoundtrackmp3" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="music">
+                CREATE TABLE `music` (
+                  `id` varchar(20) NOT NULL,
+                  `name` varchar(255) NOT NULL,
+                  `author` varchar(255) NOT NULL,
+                  `info` varchar(255) DEFAULT NULL,
+                  `time` datetime NOT NULL,
+                  `tag` varchar(255) DEFAULT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+            <pma:table name="profile">
+                CREATE TABLE `profile` (
+                  `id` varchar(255) NOT NULL,
+                  `name` varchar(255) NOT NULL,
+                  `realname` varchar(255) NOT NULL,
+                  `gender` tinyint(1) NOT NULL,
+                  `address` varchar(255) NOT NULL,
+                  `phone` int(30) NOT NULL,
+                  `email` varchar(255) NOT NULL,
+                  `CMND` int(100) NOT NULL,
+                  `info` varchar(255) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'kingsoundtrackmp3'
+    -->
+    <database name="kingsoundtrackmp3">
+        <!-- Table music -->
+        <!-- Table profile -->
+    </database>
+</pma_xml_export>
