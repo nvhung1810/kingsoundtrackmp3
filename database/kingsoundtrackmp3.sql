@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 24, 2021 at 04:56 AM
+-- Generation Time: Oct 31, 2021 at 02:55 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.11
 
@@ -29,11 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `music` (
   `id` varchar(20) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `author` varchar(255) NOT NULL,
-  `info` varchar(255) DEFAULT NULL,
-  `time` datetime NOT NULL,
-  `tag` varchar(255) DEFAULT NULL
+  `name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -44,15 +40,30 @@ CREATE TABLE `music` (
 
 CREATE TABLE `profile` (
   `id` varchar(255) NOT NULL,
+  `account` varchar(255) NOT NULL,
   `name` varchar(255) NOT NULL,
-  `realname` varchar(255) NOT NULL,
-  `gender` tinyint(1) NOT NULL,
-  `address` varchar(255) NOT NULL,
-  `phone` int(30) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `CMND` int(100) NOT NULL,
-  `info` varchar(255) NOT NULL
+  `gender` tinyint(1) DEFAULT NULL,
+  `address` varchar(255) DEFAULT NULL,
+  `phone` int(30) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `picture` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `music`
+--
+ALTER TABLE `music`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `profile`
+--
+ALTER TABLE `profile`
+  ADD PRIMARY KEY (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
