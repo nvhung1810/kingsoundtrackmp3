@@ -52,6 +52,16 @@ html {
     border-radius: 20px;
 }
 
+#files {
+    position: relative;
+    top: 50px;
+    left: 165px;
+    width: 102px;
+    color: transparent;
+    background-color:transparent;
+    display: none;
+}
+
 .upload-border {
     width: 442px;
     height: 200px;
@@ -88,20 +98,26 @@ html {
 }
 
 .music-decorate {
-    width: 200px;
+    width: 112px;
     height: 52px;
     border: 1px solid;
     padding-left: 8px;
+    padding-right: 8px;
     border-radius: 10px;
     font-size: 13px;
-    /* line-height: 42px; */
     position: absolute;
     display: flex;
     align-items: center;
 }
 
 .music-icon {
-    
+    width: 40px;
+    background-color: #FFF3EF;
+    height: 40px;
+    border-radius:8px;
+    color: #E9B7A5;
+    display: flex;
+    align-items: center;
 }
 
 .music-text {
