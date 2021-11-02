@@ -1,0 +1,189 @@
+html {
+    color: #333;
+    font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
+}
+
+.main {
+    /* background: #D0D9E0; */
+    background-image: url("../img/maxresdefault (9).jpg");
+    /* background-image: url("../img/bg1.jpg"); */
+    background-size: contain;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 80px;
+}
+
+.form {
+    width: 360px;
+    min-height: 100px;
+    padding: 32px 24px;
+    /* text-align: center; */
+    background: #fff;
+    border-radius: 20px;
+    margin: 24px;
+    align-self: center;
+    box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
+}
+
+.form .heading {
+    font-size: 3rem;
+    padding-left: 8px;
+}
+
+.form .desc {
+    text-align: center;
+    color: #636d77;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    line-height: 2.4rem;
+    margin-top: 16px;
+    font-weight: 300;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 16px;
+    margin-left: 24px;
+    flex-direction: column;
+}
+
+.form-group-fix {
+    display: none;
+}
+
+.form-label,
+.form-message {
+    text-align: left;
+}
+
+.form-label {
+    font-weight: 700;
+    padding-bottom: 6px;
+    line-height: 1.8rem;
+    font-size: 1.6rem;
+}
+
+.form-control {
+    height: 24px;
+    padding: 8px 12px 8px 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #CECECE;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.3rem;
+}
+
+.form-control:hover {
+    border-color: #87CEEB;
+}
+
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+}
+
+.form-group.invalid .form-message {
+    color: #f33a58;
+}
+
+.form-message {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+}
+
+.form-submit {
+    outline: none;
+    background-color: #6495ED;
+    margin-top: 34px;
+    padding: 16px 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    /* border-radius: 8px; */
+    border-top-left-radius: 20px;
+    cursor: pointer;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 20px;
+}
+
+.form-submit:hover {
+    background-color: #87CEEB;
+}
+
+.spacer {
+    margin-top: 36px;
+}
+
+.img {
+    height: 572px;
+    width: 406px;
+    object-fit: contain;
+}
+
+/* con mắt nhìn được hay ko nhìn được */
+.form-group .btn-toggle-see {
+    width: 40px;
+    height: 0px;
+    padding-left: 3px;
+    font-size: 16px;
+    color: rgb(102, 100, 100);
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: -276px;
+    top: -23px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-toggle-see .icon-see {
+    display: none;
+}
+
+.btn-toggle-see.playing .icon-see {
+    display: inline-block;
+}
+
+.btn-toggle-see.playing .icon-hidden {
+    display: none;
+}
+
+/* forget password */
+
+.forget-password {
+    font-size: 13px;
+    display: flex;
+    justify-content: end;
+    margin-right: 4px;
+}
+
+
+/* dont havs an account -> sign-up */
+
+.create__acc {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
+}
+
+.back__to-login {
+    text-decoration: none;
+    color: #333;
+    /* font-weight: 550; */
+    padding-left: 4px;
+    display: flex;
+    justify-content:center;
+    margin-top: 40px;
+}
+
+
