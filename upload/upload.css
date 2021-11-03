@@ -1,0 +1,230 @@
+html {
+    color: #333;
+    font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    /* align-items: center; */
+}
+
+.main {
+    background-color: #def0f7;
+    width: 940px;
+    height: 340px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.header-text {
+    color: #423B9F;
+    display: block;
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.header-text:first-child {
+    padding-top: 40px;
+}
+
+.header-des {
+    text-align: center;
+    font-size: 13px;
+}
+
+.upload {
+    width: 500px;
+    height: 260px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid; */
+    z-index: 1;
+    position: relative;
+    top: 20px;
+    left: 218px;
+    box-shadow: 0px 12px 16px 4px #F7F7F9;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#files {
+    position: relative;
+    top: 50px;
+    left: 165px;
+    width: 102px;
+    color: transparent;
+    background-color:transparent;
+    display: none;
+}
+
+.upload-border {
+    width: 442px;
+    height: 200px;
+    border: 4px dashed #ccc;
+    border-radius: 12px;
+}
+
+.upload-text {
+    font-size: 16px;
+    color: #423B9F;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 64px;
+}
+
+.upload-form {
+   
+}
+
+.btn-browser {
+    display: block;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #cbcbcb;
+    text-align: center;
+    line-height: 40px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 20px;
+    color: #423B9F;
+    margin-top: 20px;
+    margin-left: 162px;
+    cursor: pointer;
+}
+
+.music-decorate {
+    width: 118px;
+    height: 52px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 12px;
+    font-size: 13px;
+    position: absolute;
+    top: 86px;
+    left: 80px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.music-decorate-1 {
+    top: 206px;
+    left: 86px;
+    width: 50px;
+    height: 58px;
+}
+
+.music-decorate-2 {
+    left: 83%;
+    top: 70px;
+}
+
+.music-decorate-3 {
+    left: 78%;
+    top: 268px;
+    width: 128px;
+}
+
+
+.music-icon {
+    width: 40px;
+    background-color: #FFF3EF;
+    height: 30px;
+    border-radius:8px;
+    color: #E9B7A5;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.music-icon-1,
+.music-icon-2 {
+    border-radius: 50%;
+    height: 40px;
+    font-size: 24px;
+}
+
+.music-icon-2,
+.music-icon-3 {
+    background-color: #ECFAF5;
+}
+
+.music-icon-3 {
+    color: #A2D7C3;
+}
+
+.music-icon-1:before {
+    position: absolute;
+    top: 19px;
+    left: 22px;
+    font-weight: 900;   
+}
+
+.music-icon-2:before {
+    position: absolute;
+    top: 17px;
+    left: 19px;
+    font-weight: 900;   
+    color: #A2D7C3;
+}
+
+
+.music-icon-3:before {
+    position: absolute;
+    top: 16px;
+    left: 24px;
+    /* font-weight: 900;    */
+    color: #A2D7C3;
+}
+
+
+.music-text {
+    color: #E9B7A5;
+    margin-left: 8px;
+}
+
+.music-text-fix {
+    color: #A2D7C3;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.create__acc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 124px;
+    width: 440px;
+    height: 78px;
+    background-color: #FFF3EF;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #423B9F;
+    margin: auto;
+    margin-bottom: 200px;
+}
+
+.create__acc-text {
+    padding-left: 20px;
+}
+
+.create__acc-btn {
+    font-size: 13px;
+    height: 36px;
+    border-radius: 8px;
+    border: none;
+    background-color: #6495ED;
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
