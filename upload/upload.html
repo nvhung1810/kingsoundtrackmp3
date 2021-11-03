@@ -41,9 +41,15 @@
                     <div class="upload-text">Drag & Drop files here to upload</div>
                     <!-- <input type="file" id="myFile" name="filename" class="upload-form" title=" "> -->
                     
-                    <input type="file" id="files" class="hidden">
-                    <label for="files" class="btn-browser">Browse Files</label>
-                    </input>
+                    <form action="#">
+                        <div class="input-file-container">  
+                          <input class="input-file" id="my-file" type="file">
+                          <label tabindex="0" for="my-file" class="input-file-trigger">Select a file...</label>
+                        </div>
+                        <p class="file-return">
+                          <div class="render"></div>
+                        </p>
+                      </form>
                 </div>
             </div>
         </div>
@@ -52,5 +58,6 @@
         <div class="create__acc-text">Do you want to 50 GB Free*storage?</div>
         <button class="create__acc-btn">Create an account</button>
     </div>
+    <script src = "./upload.js"></script>
 </body>
 </html>
