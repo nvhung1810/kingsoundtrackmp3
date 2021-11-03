@@ -1,12 +1,3 @@
-const $ = document.querySelector.bind(document)
-const $$ = document.querySelectorAll.bind(document)
-
-const  tabs = $$('.tab-item')
-const panes = $$('.tab-pane')
-const tabActions = $('.tab-item.active')
-const line = $('.tabs .line')
-line.style.left = tabActions.offsetLeft + 'px'
-line.style.width = tabActions.offsetWidth + 'px'
 
 const search = $('.search')
 const btnSearch = $('.btn__search')
@@ -28,31 +19,6 @@ let prevX = 0
 let index = 0;
 const listSongWidth = songList.offsetWidth
 const listSongWidth2 = songList2.offsetWidth
-
-// 
-
-tabs.forEach((tab, index) => {
-    const pane = panes[index]
-
-  // index sẽ dùng để lấy panes
-  tab.onclick = function() {
-      // lấy pane
-      
-      // kiêm tra xem có cái nào active thì xóa đi
-      $('.tab-item.active').classList.remove('active')
-      $('.tab-pane.active').classList.remove('active')
-
-
-      line.style.left = this.offsetLeft + 'px'
-      line.style.width = this.offsetWidth + 'px'
-      // add class đang hoạt động cho cái được onclick
-      this.classList.add('active')
-      pane.classList.add('active')
-      // làm đường line
-      // xét có line bằng cái avtive
-
-  }
-})
 
 
 const cover = {

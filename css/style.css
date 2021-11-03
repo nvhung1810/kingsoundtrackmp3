@@ -771,7 +771,9 @@ body {
 }
  
 .btn__prev:hover,
-.btn__next:hover {
+.btn__next:hover,
+.btn__prev-2:hover,
+.btn__next-2:hover {
   color: #2daaed;
 }
 

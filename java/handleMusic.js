@@ -37,7 +37,7 @@ const app = {
         {
             name: 'Vòng Suy Nghĩ',
             singer: 'Mai Âm Nhạc',
-            path: './song/vong_suy_nghi.wav',
+            path: './song/vong_suy_nghi.mp3',
             image: './img/photo-1-16344006808131550761637.png'
         },
         {
@@ -180,21 +180,6 @@ const app = {
         },
         
 
-    ],
-
-    songs2: [
-        {
-            name: "Đây Là Rap Việt",
-            singer: "Rhymastic, JustaTee, Wowy, Karik, Binz, Suboi",
-            path: './song_rap/day_la_rap_viet.mp3',
-            image: './img/artworks-VgxuOQtoVOu20Mv1-SzJODA-t500x500.jpg'
-        },
-        {
-            name: "Đây Là Rap Việt",
-            singer: "Rhymastic, JustaTee, Wowy, Karik, Binz, Suboi",
-            path: './song_rap/day_la_rap_viet.mp3',
-            image: './img/artworks-VgxuOQtoVOu20Mv1-SzJODA-t500x500.jpg'
-        },
     ],
 
     render: function () {
