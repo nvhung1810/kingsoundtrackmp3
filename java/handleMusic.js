@@ -85,79 +85,79 @@ const app = {
         {
             name: 'EYES',
             singer: 'G Ducky',
-            path: './song/doi_mat.mp3',
+            path: './song2/doi_mat.mp3',
             image: './img/doi_mat.jpg'
         },
         {
             name: "Ôi Bạn Ơi",
             singer: "Khá Bảnh và Meme",
-            path: './song/oiBanOi.mp3',
+            path: './song2/oiBanOi.mp3',
             image: './img/aa297a44f49140099ac6e987eebe2bf9_13_7188.jpg'
         },
         {
             name: "3107 2",
             singer: "DuonggNauWn",
-            path: './song/31072LofiVersion-DuonggNauWn-6944268_hq.mp3',
+            path: './song2/31072LofiVersion-DuonggNauWn-6944268_hq.mp3',
             image: './img/3107_2.jpg'
         },
         {
             name: "Cưới đi",
             singer: "2TChangC",
-            path: './song/CuoiDi-2TChangC-6560962.mp3',
+            path: './song2/CuoiDi-2TChangC-6560962.mp3',
             image:'./img/cuoi_di.jpg'
         },
         {
             name: "Độ Tộc 2",
             singer: "Phúc Du & Pháo & Mixigaming",
-            path:'./song/DoToc2-MasewDoMixiPhucDuPhao-7064730.mp3',
+            path:'./song2/DoToc2-MasewDoMixiPhucDuPhao-7064730.mp3',
             image:'./img/dotoc.jpg'
         },
         {
             name: "Thức Giấc",
             singer: "DALAB",
-            path: './song/ThucGiac-DaLAB-7048212.mp3',
+            path: './song2/ThucGiac-DaLAB-7048212.mp3',
             image:'./img/thucgiac.jpg'
         },
         {
             name: "Tát Nước Đầu Đình(Cowvy Mix)",
             singer: " Lynk Lee ft.Binz",
-            path: './song/ta_nuo_dau_dinh(remix).mp3',
+            path: './song2/ta_nuo_dau_dinh(remix).mp3',
             image:'./img/maxresdefault (4).jpg'
         },
         {
             name: "Lạ Quá",
             singer: "Bray & Karik",
-            path: './song/LaQua-BRayKarik-7114874.mp3',
+            path: './song2/LaQua-BRayKarik-7114874.mp3',
             image:'./img/1634807126106_300.jpg'
         },
         {
             name: "Trên Tình Bạn Dưới Tình Yêu",
             singer: "Min",
-            path: './song/TrenTinhBanDuoiTinhYeu-MIN-6802163.mp3',
+            path: './song2/TrenTinhBanDuoiTinhYeu-MIN-6802163.mp3',
             image:'./img/1604574284072_500.jpg'
         },
         {
             name: "Trên Tình Bạn Dưới Tình Yêu",
             singer: "Min",
-            path: './song/PhoDaLenDenCukakRemix-HuyenTamMon-7037466.mp3',
+            path: './song2/PhoDaLenDenCukakRemix-HuyenTamMon-7037466.mp3',
             image:'./img/maxresdefault (5).jpg'
         },
         {
             name: "Forget Me Now(CukCak remix)",
             singer: "Fisht & Trí Dũng",
-            path: './song/ForgetMeNowCukakRemix-FishyTriDung-7080307.mp3',
+            path: './song2/ForgetMeNowCukakRemix-FishyTriDung-7080307.mp3',
             image:'./img/3d978881905e7fca9ce614095416a462.jpg'
         },
         {
             name: "Đường Tôi Chở Em Về (Cukak Remix)",
             singer: "Bùi Trường Linh",
-            path: './song/duong_toi_tro_e_ve.mp3',
+            path: './song2/duong_toi_tro_e_ve.mp3',
             image:'./img/1626754400112_500.jpg'
         },
         {
             name: "Kẻ Cắp Gặp Bà Già(LINH KU x DMIXX Remix )",
             singer: "Hoàng Thùy Linh & Binz",
-            path: './song/ke_cap_gap_ba_gia.mp3',
+            path: './song2/ke_cap_gap_ba_gia.mp3',
             image:'./img/maxresdefault (6).jpg'
         },
         {
