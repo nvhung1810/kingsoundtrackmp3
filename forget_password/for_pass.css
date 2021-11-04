@@ -6,9 +6,9 @@ html {
 
 .main {
     /* background: #D0D9E0; */
-    background-image: url("../img/maxresdefault (9).jpg");
+    background-image: url("../img/maxresdefault\ \(9\).jpg");
     /* background-image: url("../img/bg1.jpg"); */
-    background-size: contain;
+    background-size: inherit;
     min-height: 100vh;
     display: flex;
     align-items: center;
