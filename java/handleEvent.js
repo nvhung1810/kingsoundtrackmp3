@@ -20,7 +20,6 @@ let index = 0;
 const listSongWidth = songList.offsetWidth
 const listSongWidth2 = songList2.offsetWidth
 
-
 const cover = {
     isPlaying: false,
     handleEvent: function() {
