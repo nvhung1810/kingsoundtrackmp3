@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../new-password/new_pass.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="../font/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../font/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="main">
+         
+            <!-- <img src="./img/anhcute.png" alt="" class="img"> -->
+            <form action="" method="POST" class="form" id="form-1">
+                <a href = "../sign-in/sing_in.html" class="directional">
+                  <i class="directional-icon fas fa-arrow-left"></i>
+                  <div class="directional-text">Back</div>
+                </a>
+                <h3 class="heading">Create new password</h3>
+                <p class="desc">Your new password must be different from previous used passwords.</p>
+                <!-- Miếng đệm -->
+                <div class="spacer"></div>
+    
+                <div class="form-group form-group-fix">
+                    <label for="fullname" class="form-label">Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Your name" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+                <!-- message chỉ hiển thị khi có lỗi -->
+                <!-- Phần điền email -->
+                <div class="form-group form-group-fix">
+                    <label for="email" class="form-label">Email</label>
+                    <input id="email" name="email" type="text" placeholder="Your email-id" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+                <!-- Phàn điền số điện thoại -->
+                <div class="form-group form-group-fix">
+                    <label for="number" class="form-label">Contact no.</label>
+                    <input id="number" name="number" type="text" placeholder="Your contact number" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+                <!-- Nhập mật khẩu -->
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <input id="password" name="password" type="password" placeholder="Password" class="form-control form-control-pass">
+                      <div class="btn btn-toggle-see">
+                        <i class="icon-hidden fas fa-eye-slash"></i>
+                        <i class="icon-see fas fa-eye"></i>
+                      </div>
+                    </input>
+                    <span class="form-message"></span>
+                </div>
+                <!-- Nhập lại mật khẩu -->
+                <div class="form-group">
+                    <label for="password_confirmation" class="form-label">Confim password</label>
+                    <input id="password_confirmation" name="password_confirmation" placeholder="Enter password again" type="password" class="form-control">
+                   
+                    </input>
+                    <span class="form-message"></span>
+                </div>
+
+    
+                <button class="form-submit">Log In</button>
+            
+            </form>
+        </div>
+    </div>
+
+    <script src="../sign-in/sign_in.js"></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+          // Mong muốn của chúng ta
+          Validator({
+            form: '#form-1',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+              Validator.isRequired('#fullname', 'Please enter your name'),
+              Validator.isEmail('#email'),
+              Validator.minLength('#password', 12),
+              Validator.isRequired('#password_confirmation'),
+              Validator.isConfirmed('#password_confirmation', function () {
+                return document.querySelector('#form-1 #password').value;
+              }, 'Re-entered password is incorrect')
+            ],
+            onSubmit: function (data) {
+              // Call API
+              console.log(data);
+            }
+          });
+    
+    
+          Validator({
+            form: '#form-2',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+              Validator.isEmail('#email'),
+              Validator.minLength('#password', 12),
+            ],
+            onSubmit: function (data) {
+              // Call API
+              console.log(data);
+            }
+          });
+        });
+    
+      </script>
+
+
+
+</body>
+</html>
