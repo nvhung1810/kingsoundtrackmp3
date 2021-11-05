@@ -181,22 +181,7 @@ const app = {
         
 
     ],
-
-    songs2: [
-        {
-            name: "Đây Là Rap Việt",
-            singer: "Rhymastic, JustaTee, Wowy, Karik, Binz, Suboi",
-            path: './song_rap/day_la_rap_viet.mp3',
-            image: './img/artworks-VgxuOQtoVOu20Mv1-SzJODA-t500x500.jpg'
-        },
-        {
-            name: "Đây Là Rap Việt",
-            singer: "Rhymastic, JustaTee, Wowy, Karik, Binz, Suboi",
-            path: './song_rap/day_la_rap_viet.mp3',
-            image: './img/artworks-VgxuOQtoVOu20Mv1-SzJODA-t500x500.jpg'
-        },
-    ],
-
+    
     render: function () {
         const htmls = this.songs.map((song, index) => {
             return `
