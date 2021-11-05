@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 04, 2021 at 04:05 PM
+-- Generation Time: Nov 05, 2021 at 04:55 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.11
 
@@ -28,8 +28,8 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `music` (
-  `id` varchar(20) NOT NULL,
-  `title` varchar(255) NOT NULL,
+  `id` int(20) NOT NULL,
+  `title` varchar(255) DEFAULT NULL,
   `soundfile` varchar(255) NOT NULL,
   `picture` varchar(255) DEFAULT NULL,
   `description` varchar(255) DEFAULT NULL
@@ -42,13 +42,15 @@ CREATE TABLE `music` (
 --
 
 CREATE TABLE `profile` (
-  `id` varchar(255) NOT NULL,
-  `account` varchar(255) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `gender` tinyint(1) DEFAULT NULL,
+  `id` int(20) NOT NULL,
+  `account` varchar(100) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `gender` varchar(5) DEFAULT NULL,
   `address` varchar(255) DEFAULT NULL,
   `phone` int(30) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
+  `code` int(6) DEFAULT NULL,
   `picture` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
