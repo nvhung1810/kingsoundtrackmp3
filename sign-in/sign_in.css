@@ -163,6 +163,8 @@ html {
     display: flex;
     justify-content: end;
     margin-right: 4px;
+    text-decoration: none;
+    color: #333;
 }
 
 
