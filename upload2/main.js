@@ -1,6 +1,3 @@
-const $ = document.querySelector.bind(document)
-const $$ = document.querySelectorAll.bind(document)
-const main = $('.main')
 const form = document.querySelector("form"),
 fileInput = document.querySelector(".file-input"),
 progressArea = document.querySelector(".progress-area"),
@@ -16,7 +13,7 @@ fileInput.onchange = ({target}) =>{
     let fileName = file.name;
     if(fileName.length >= 12){
       let splitName = fileName.split('.');
-      // fileName = splitName[0].substring(0, 13) + "... ." + splitName[1];
+      fileName = splitName[0].substring(0, 13) + "... ." + splitName[1];
     }
     uploadFile(fileName);
   }
@@ -34,14 +31,13 @@ function uploadFile(name){
     console.log(fileTotal)
     let fileSize;
     (fileTotal < 1024) ? fileSize = fileTotal + " KB" : fileSize = (loaded / (1024*1024)).toFixed(2) + " MB";
-    main.classList.add('inactives')
+
     // quyết định cái thanh chạy %
     let progressHTML = `<li class="row">
+                          <i class="fas fa-file-alt"></i>
                           <div class="content">
                             <div class="details">
-                              <span class="name name-upload">${name} 
-                                <span class = "uploading-text">• Uploading</span>
-                              </span>
+                              <span class="name">${name} • Uploading</span>
                               <span class="percent">${fileLoaded}%</span>
                             </div>
                             <div class="progress-bar">
@@ -54,28 +50,15 @@ function uploadFile(name){
     if(loaded == total){
       progressArea.innerHTML = "";
       let uploadedHTML = `<li class="row">
-                            <div class="content">
+                            <div class="content upload">
                               <i class="fas fa-file-alt"></i>
                               <div class="details">
-                              <span class="name name-upload">${name} 
-                                <span class = "uploading-text">• Uploaded</span>
-                              </span>
-                                <span class="percent">${fileLoaded}%</span>
+                                <span class="name">${name} • Uploaded</span>
                                 <span class="size">${fileSize}</span>
                               </div>
                             </div> 
-                            <i class="icon-check fas fa-check"></i>
-                          </li>
-
-                          <li class="ahihi">
-                            <span>Ahihi</span>
-                          </li>
-                          <li class="ahihi">
-                          <span>Ahihi</span>
-                        </li>
-                          
-                          `
-                          ;
+                            <i class="fas fa-check"></i>
+                          </li>`;
       uploadedArea.classList.remove("onprogress");  
       uploadedArea.insertAdjacentHTML("afterbegin", uploadedHTML);
     }

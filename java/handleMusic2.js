@@ -7,161 +7,161 @@ const app2 = {
         {
             name: "Trái Đất Này",
             singer: "Dế CHoắt, BOkeh",
-            path: './song_rap/TraiDatNay-DeChoatBOkeh-6672839.mp3',
+            path: '.song/song_rap/TraiDatNay-DeChoatBOkeh-6672839.mp3',
             image: './img/090513_rap_viet___thi_sinh_de_choat_va_bokeh.jpg'
         },
         {
             name: "Đây Là Rap Việt",
             singer: "Rhymastic, JustaTee, Wowy, Karik, Binz, Suboi",
-            path: './song_rap/day_la_rap_viet.mp3',
+            path: './song/song_rap/day_la_rap_viet.mp3',
             image: './img/1602236499800_640.jpg'
         },
         {
             name: "Đây Là Rap Việt 2",
             singer: "Rhymastic, JustaTee, Wowy, Karik, Binz, LK",
-            path: './song_rap/day_la_rap_viet_2.mp3',
+            path: './song/song_rap/day_la_rap_viet_2.mp3',
             image: './img/80c5df5d70eb495406f51c8886242a6f.500x500x1.jpg'
         },
         {
             name: "EYES",
             singer: "G Ducky",
-            path: './song_rap/eyes.mp3',
+            path: './song/song_rap/eyes.mp3',
             image: './img/doi_mat.jpg'
         },
         {
             name: "Anh Vẫn Okey",
             singer: "MCK",
-            path: './song_rap/anh_van_okey.mp3',
+            path: './song/song_rap/anh_van_okey.mp3',
             image: './img/1600736000_600.jpg'
         },
         {
             name: "Dân Chơi Xóm",
             singer: "MCK, JustaTee",
-            path: './song_rap/dan_choi_xom.mp3',
+            path: './song/song_rap/dan_choi_xom.mp3',
             image: './img/maxresdefault (7).jpg'
         },
         {
             name: "Sài Gòn Có Em",
             singer: "Black Ka",
-            path: './song_rap/sai_gon_dep_lam.mp3',
+            path: './song/song_rap/sai_gon_dep_lam.mp3',
             image: './img/loi-bai-hat-sai-gon-co-em-700.jpg'
         },
         {
             name: "Giàu Vì Bạn Sang Vì Vợ",
             singer: "MCK",
-            path: './song_rap/giau_vi_ban_sang_vi_vo.mp3',
+            path: './song/song_rap/giau_vi_ban_sang_vi_vo.mp3',
             image: './img/maxresdefault (8).jpg'
         },
         {
             name: "Vì Em So Đẹp & Gu Của Anh Là Châu Á",
             singer: "Thành Draw, Yuno BigBoi",
-            path: './song_rap/gu_cua_anh_la_chau_a_vi_em_so_dep.mp3',
+            path: './song/song_rap/gu_cua_anh_la_chau_a_vi_em_so_dep.mp3',
             image: './img/maxresdefault (3).jpg'
         },
         {
             name: "Katy",
             singer: "Gonzo",
-            path: './song_rap/katy.mp3',
+            path: './song/song_rap/katy.mp3',
             image: './img/gonzo-la-ai-tieu-su-su-nghiep-tinh-yeu-nam-sinh-cua-nam-rapper-0f32a562.jpg'
         },
         {
             name: "Mình Đồng da sắt",
             singer: "Tez",
-            path: './song_rap/minh_dong_da_sat.mp3',
+            path: './song/song_rap/minh_dong_da_sat.mp3',
             image: './img/bfx7.jpg'
         },
         {
             name: "Tình... Hình Thời Tiết",
             singer: "Tlinh VS Ak49 VS Hà Quốc Hoàng",
-            path: './song_rap/tinh_hinh_thoi_tiet.mp3',
+            path: './song/song_rap/tinh_hinh_thoi_tiet.mp3',
             image: './img/artworks-dGbiuwPrIc9KqYAb-J3HyaQ-t500x500.jpg'
         },
         // Dế choắt : 9d61aa0485a7fd21b364f0ed97907a45.jpg
         {
             name: "Chú Bé Loắt Choắt",
             singer: "Dế Choắt",
-            path: './song_rap/ChuBeLoatChoatFeatDeChoat-RAPVIET-6727146.mp3',
+            path: './song/song_rap/ChuBeLoatChoatFeatDeChoat-RAPVIET-6727146.mp3',
             image: './img/9d61aa0485a7fd21b364f0ed97907a45.jpg'
         },
         // TLinh : ltinh-16013108051571141895299.jpg
         {
             name: "Chú Chó Trên Ô Tô",
             singer: "TLinh",
-            path: './song_rap/ChuChoTrenOToFeatTlinh-RAPVIET-6804703.mp3',
+            path: './song/song_rap/ChuChoTrenOToFeatTlinh-RAPVIET-6804703.mp3',
             image: './img/ltinh-16013108051571141895299.jpg'
         },
         // ricky star: ricky-star-p-16056801155631736637449.png
         {
             name: "Con Nhà Người Ta",
             singer: "Ricky Star",
-            path: './song_rap/ConNhaNguoiTaFeatRickyStar-RAPVIET-6801872.mp3',
+            path: './song/song_rap/ConNhaNguoiTaFeatRickyStar-RAPVIET-6801872.mp3',
             image: './img/ricky-star-p-16056801155631736637449.png'
         },
         // yuno : 113964768-3366032790124319-158-6847-6904-.jpg
         {
             name: "Dám Hay Không Dám",
             singer: "Yuno BigBoi",
-            path: './song_rap/DamHayKhongDamFeatYunoBigboi-RAPVIET-6727152.mp3',
+            path: './song/song_rap/DamHayKhongDamFeatYunoBigboi-RAPVIET-6727152.mp3',
             image: './img/113964768-3366032790124319-158-6847-6904-.jpg'
         },
         {
             name: "?",
             singer: "Ricky Star",
-            path: './song_rap/FeatDeChoat-RAPVIET-6804708.mp3',
+            path: './song/song_rap/FeatDeChoat-RAPVIET-6804708.mp3',
             image: './img/9d61aa0485a7fd21b364f0ed97907a45.jpg'
         },
         {
             name: "Hy Vọng",
             singer: "Ricky Star",
-            path: './song_rap/HyVongFeatRptGonzo-RAPVIET-6804704.mp3',
+            path: './song/song_rap/HyVongFeatRptGonzo-RAPVIET-6804704.mp3',
             image: './img/gonzo-la-ai-tieu-su-su-nghiep-tinh-yeu-nam-sinh-cua-nam-rapper-0f32a562.jpg'
         },
         {
             name: "May",
             singer: "MCk, Yuno BigBoi, Duy Andy",
-            path: './song_rap/MayFeatRptMckDuyAndyYunoBigboi-RAPVIET-6755783.mp3',
+            path: './song/song_rap/MayFeatRptMckDuyAndyYunoBigboi-RAPVIET-6755783.mp3',
             image: './img/may.jpg'
         },
         {
             name: "Nhà Bao Việc",
             singer: "R-Tee",
-            path: './song_rap/NhaBaoViecFeatRtee-RAPVIET-6747960.mp3',
+            path: './song/song_rap/NhaBaoViecFeatRtee-RAPVIET-6747960.mp3',
             image: './img/rtee-p-16039487225551035203271.png'
         },
         {
             name: "Ở Nhà Quê Mới Lên",
             singer: "Lăng LD",
-            path: './song_rap/ONhaQueMoiLenFeatLangLd-RAPVIET-6801873.mp3',
+            path: './song/song_rap/ONhaQueMoiLenFeatLangLd-RAPVIET-6801873.mp3',
             image: './img/1614651534276_600.jpg'
         },
         {
             name: "Rằm Tháng 7",
             singer: "R-Tee",
-            path: './song_rap/RamThang7FeatRtee-RAPVIET-6821163.mp3',
+            path: './song/song_rap/RamThang7FeatRtee-RAPVIET-6821163.mp3',
             image: './img/rtee-p-16039487225551035203271.png'
         },
         {
             name: "Rồng Rắn Lên Mây",
             singer: "Thành Draw",
-            path: './song_rap/RongRanLenMayFeatThanhDraw-RAPVIET-6748044.mp3',
+            path: './song/song_rap/RongRanLenMayFeatThanhDraw-RAPVIET-6748044.mp3',
             image: './img/thanh-draw-c-1605531666245702737858.png'
         },
         {
             name: "Thành Thật",
             singer: "Thành Draw",
-            path: './song_rap/ThanhThatFeatThanhDraw-RAPVIET-6804705.mp3',
+            path: './song/song_rap/ThanhThatFeatThanhDraw-RAPVIET-6804705.mp3',
             image: './img/thanh-draw-c-1605531666245702737858.png'
         },
         {
             name: "Tiền Nhiều Để Làm Gì",
             singer: "G Ducky",
-            path: './song_rap/TienNhieuDeLamGi2-GDucky-6737970.mp3',
+            path: './song/song_rap/TienNhieuDeLamGi2-GDucky-6737970.mp3',
             image: './img/gducky-p-1605527150113946908577.png'
         },
         {
             name: "Va Vào Giai Điệu Này",
             singer: "MCK",
-            path: './song_rap/VaVaoGiaiDieuNayFeatRptMck-RAPVIET-6804702.mp3',
+            path: './song/song_rap/VaVaoGiaiDieuNayFeatRptMck-RAPVIET-6804702.mp3',
             image: './img/1600736000_600.jpg'
         },
     ],

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/grid.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="./font/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
@@ -90,10 +89,10 @@
                 <div class="bell">
                     <i class="bell__icon fas fa-bell"></i>
                 </div>
-                <a href="" class="sign__in">
+                <a href="./sign-in/sing_in.html" class="sign__in">
                     Sign in
                 </a>
-                <a href = "" class="create__acc">
+                <a href = "./sign-up/login.html" class="create__acc">
                     Create Account
                 </a>
             </div>
@@ -161,65 +160,6 @@
                                     
                                 </div>
                             </div>
-                            <!-- <div class="footer">
-                                <div class="footer-info">
-                                    <span class="footer-name">THÀNH VIÊN NHÓM</span>
-                                    <div class="footer-name-des">
-                                        <div class="footer-name-des-one">
-                                            <a href =  "https://www.facebook.com/ngcong2001" class="footer-link">
-                                                <i class="footer-icon ti-angle-right"></i>
-                                                <span class="footer-description">Nguyễn Viết Công</span>
-                                            </a>
-                                            <a href =  "https://www.facebook.com/profile.php?id=100071209831250" class="footer-link">
-                                                <i class="footer-icon ti-angle-right"></i>
-                                                <span class="footer-description">Phan Thị Giang</span>
-                                            </a>
-                                            <a href =  "https://www.facebook.com/profile.php?id=100010147653030" class="footer-link">
-                                                <i class="footer-icon ti-angle-right"></i>
-                                                <span class="footer-description">Nguyễn Văn Hưng</span>
-                                            </a>
-                                            <a href =  "https://www.facebook.com/nguyen.d.nam.568" class="footer-link">
-                                                <i class="footer-icon ti-angle-right"></i>
-                                                <span class="footer-description">Nguyễn Hoàng Nam</span>
-                                            </a>
-                                        </div>
-                                        <div class="footer-name-des-two">
-                                            <a href =  "https://www.facebook.com/manh.giang.73594" class="footer-link">
-                                                <i class="footer-icon ti-angle-right"></i>
-                                                <span class="footer-description">Giang Đức Mạnh</span>
-                                            </a>
-                                            <a href =  "https://www.facebook.com/buihong.son.10" class="footer-link">
-                                                <i class="footer-icon ti-angle-right"></i>
-                                                <span class="footer-description">Bùi Hồng Sơn</span>
-                                            </a>
-                                            <a href =  "https://www.facebook.com/trinh.thieu.560" class="footer-link">
-                                                <i class="footer-icon ti-angle-right"></i>
-                                                <span class="footer-description">Thiều Thị Kiều Trinh</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="footer-connect">
-                                    <span class="footer-name">KẾT NỐI VỚI CHÚNG TÔI</span>
-                                    
-                                    <a href="" class="footer__icon-link">
-                                        <i class="footer-icon-fix ti-facebook"></i>
-                                        <span class="footer-description footer-description-fix">Facebook</span>
-                                    </a>
-                                    <a href="https://www.instagram.com/danphn_242/" class="footer__icon-link">
-                                        <i class="footer-icon-fix ti-instagram"></i>
-                                        <span class="footer-description footer-description-fix">Instagram: danphn_242</span>
-                                    </a>
-                                    <a href="https://www.instagram.com/thieu641/" class="footer__icon-link">
-                                        <i class="footer-icon-fix ti-instagram"></i>
-                                        <span class="footer-description footer-description-fix">Instagram: thieu641</span>
-                                    </a>
-                                    <a href="https://github.com/ngcong6101/kingsoundtrackmp3" class="footer__icon-link">
-                                        <i class="footer-icon-fix ti-github"></i>
-                                        <span class="footer-description footer-description-fix">Github</span>
-                                    </a>
-                                </div>
-                            </div> -->
                         </div>
                         <!-- lịch sử nghe nhạc -->
                         <div class="music-history">
@@ -285,7 +225,115 @@
                     </div>
                 </div>
                <div class="tab-pane">
-                  
+                <div class="listen-wrap">
+                    <!-- list nhạc -->
+                    <!-- tắt trạng thái hoạt động : list__song-item-des-inactive -->
+                      <div class="music-wrap">
+                          <div class="music__header">
+                              <div class="music__header-title">NGỒI CHILL NGÀY XƯA</div>
+                              <div class="music__header-des list__song-item-des-inactive">The most played tracks on SoundCloud this week</div>
+                              
+                              <div class="list-song-wrap">
+                                  <ul class="list__song list__song-one">
+                                     
+                                  </ul>
+                                  <i class="btn__next ti-arrow-circle-right"></i>
+                              </div>
+                              <i class="btn__prev inactives ti-arrow-circle-left"></i>
+                              <!-- inactives: class ẩn hiện với display: none -->
+                              <div class="seperate"></div>
+                              <!-- <audio src="" id="audio"></audio> -->
+                          </div>
+                          <div class="music__header">
+                              <div class="music__header-title">CHÁY CÙNG RAP VIỆT</div>
+                              <div class="music__header-des list__song-item-des-inactive">The most played tracks on SoundCloud this week</div>
+                              
+                              <div class="list-song-wrap">
+                                  <ul class="list__song list__song-two">
+                                     
+                                  </ul>
+                                  <i class="btn__next-2 ti-arrow-circle-right"></i>
+                              </div>
+                              <i class="btn__prev-2 inactives ti-arrow-circle-left"></i>
+                              <!-- inactives: class ẩn hiện với display: none -->
+                              <div class="seperate"></div>
+                              <!-- <audio src="" id="audio"></audio> -->
+                          </div>
+                          <div class="music__header music__header-fix">
+                              <div class="music__header-title">Picks For You</div>
+                              <div class="music__header-des">Since you liked Karik we think you'll like:</div>
+                              <ul class="song__list">
+                                  <li class="song__list-item-img">
+                                      <img src="./img/1593412376912_600 (1).jpg" alt="" class="song__list-img">
+                                  </li>
+                                  <li class="song__list-item-song">
+                          
+                                  </li>
+                              </ul>
+                              <div class="about__singer">
+                                  <div class="about__singer-view">
+                                      <a href="" class="about__singer-link">
+                                          <img src="./img/1593412376912_600 (1).jpg" alt="" class="about__singer-avt">
+                                      </a>
+                                      <div class="about__singer-des">Karik</div>
+                                  </div>
+                                  <a href="" class="about__singer-link">
+                                      <button class="about__singer-btn">Go to playlist</button>
+                                  </a>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <!--  thanh nghe nhạc -->
+                      <div class="music__bar">
+                          <div class="control">
+                              <div class="btn btn-repeat">
+                                  <i class="fas fa-redo"></i>
+                              </div>
+                              <div class="btn btn-prev">
+                                  <i class="fas fa-step-backward"></i>
+                              </div>
+                              <div class="btn btn-toggle-play">
+                                  <i class="icon-pause fas fa-pause"></i>
+                                  <i class="icon-play fas fa-play"></i>
+                              </div>
+                              <div class="btn btn-next">
+                                  <i class="fas fa-step-forward"></i>
+                              </div>
+                              <div class="btn btn-random">
+                                  <i class="fas fa-random"></i>
+                              </div>
+
+                              <div class="music__bar-listening">
+                                  <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+                              </div>  
+
+                              <div class="btn btn-toggle-sound">
+                                  <i class="icon-up-sound fas fa-volume-up"></i>
+                                  <i class="icon-down-sound fas fa-volume-down"></i>
+                              </div>
+
+                              <div class="music__bar-song">
+                                  <a href="" class="music__bar-link">
+                                      <img src="./img/cuoithoi.jpg" alt="" class="music__bar-img">
+                                  </a>
+                                  <div class="music__bar-info">
+                                      <a href="" class="music__bar-name">Cưới thôi</a>
+                                      <a href="" class="music__bar-des">Bùi Sơn & Kiều Trinh</a>
+                                  </div>
+                              </div>
+
+                              <div class="music__bar-follow">
+                                  <i class="music__bar-follow-icon fas fa-heart"></i>
+                                  <i class="music__bar-follow-icon fas fa-user-plus"></i>
+                                  <i class="music__bar-follow-icon fas fa-bars"></i>
+                              </div>
+                          
+                              <audio id="audio" src=""></audio>
+                          </div>
+                      </div>
+                  </div>
               </div>
               <div class="tab-pane">
                  

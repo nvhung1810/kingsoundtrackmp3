@@ -7,7 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="../upload/upload.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="../font/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../font/themify-icons-font/themify-icons/themify-icons.css">
@@ -15,7 +14,7 @@
 </head>
 <body>
     <div class="wrap">
-        <div class="main">
+        <div class="main ">
             <span class="header-text">Secure Cloud Storage &</span> 
             <span class="header-text">Communication</span> 
             <p class="header-des">Grab Premium Account today Check out our awesome deals!</p>
@@ -41,23 +40,33 @@
                     <div class="upload-text">Drag & Drop files here to upload</div>
                     <!-- <input type="file" id="myFile" name="filename" class="upload-form" title=" "> -->
                     
-                    <form action="#">
-                        <div class="input-file-container">  
-                          <input class="input-file" id="my-file" type="file">
-                          <label tabindex="0" for="my-file" class="input-file-trigger">Select a file...</label>
-                        </div>
-                        <p class="file-return">
-                          <div class="render"></div>
-                        </p>
-                      </form>
+                    <div class="wrapper">
+                        <form action="#">
+                            <input type="file" class = "file-input" name = "file" hidden>
+                            <p>Browse File to Upload</p>
+                        </form>
+                    </div>
+                    <div class="upload__privacy">
+                        <label class="container">Public
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Private
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
                 </div>
             </div>
+            <div class="create__acc">
+                <div class="create__acc-text">Do you want to 50 GB Free*storage?</div>
+                <button class="create__acc-btn">Create an account</button>
+            </div>
         </div>
+        <section class="progress-area"></section>
+                        <section class="uploaded-area"></section>
     </div>
-    <div class="create__acc">
-        <div class="create__acc-text">Do you want to 50 GB Free*storage?</div>
-        <button class="create__acc-btn">Create an account</button>
-    </div>
+    
     <script src = "./upload.js"></script>
 </body>
 </html>

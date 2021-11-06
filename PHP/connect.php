@@ -1,6 +1,6 @@
 <?php
    //Kết nối
-   $host = "localhost";
+   $host = "127.0.0.1:3307";
    $username = "root";
    $password = "";
    $dbname = "kingsoundtrackmp3";
@@ -8,5 +8,7 @@
    if ($conn -> connect_error) {
        echo "Lỗi kết nối";
    }
-   else {}
+   else {
+       echo "Kết nối thành công";
+   }
 ?>

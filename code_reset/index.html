@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../code_reset/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="../font/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../font/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="main">
+         
+            <!-- <img src="./img/anhcute.png" alt="" class="img"> -->
+            <form action="" method="POST" class="form" id="form-1">
+                <!-- <a href = "../sign-in/sing_in.html" class="directional">
+                  <i class="directional-icon fas fa-arrow-left"></i>
+                  <div class="directional-text">Back</div>
+                </a> -->
+                <div class="icon-header">
+                  <i class="icon-mail fas fa-envelope-open-text"></i>
+                </div>
+                <h3 class="heading">Check your mail</h3>
+                <p class="desc">We have sent a password recover instructions to your email.</p>
+                <!-- Miếng đệm -->
+                <div class="spacer"></div>
+               
+                <div class="form-group">
+                  <label for="password" class="form-label">Enter code</label>
+                  <input id="password" name="password" type="text" placeholder="Enter your code" class="form-control">
+                  <span class="form-message"></span>
+                </div>
+
+                <button class="form-submit">Next</button>
+                
+                <div class="create__acc">
+                  <!-- <p class="dont__hav-acc">Don't have an account?</p> -->
+                  <a href="" class="back__to-login">Skip, I'll confirm later</a>
+                </div>
+                <div class="description">Did not receive the email? Check your spame filter, or
+                  <a href="" class="des-link">try another email address.</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../code_reset/main.js"></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+          // Mong muốn của chúng ta
+          Validator({
+            form: '#form-1',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+              Validator.isRequired('#fullname', 'Please enter your name'),
+              Validator.isEmail('#email'),
+              Validator.minLength('#password', 6),
+              Validator.maxLength('#password', 6),
+              Validator.isRequired('#password_confirmation'),
+              Validator.isConfirmed('#password_confirmation', function () {
+                return document.querySelector('#form-1 #password').value;
+              }, 'Re-entered password is incorrect')
+            ],
+            onSubmit: function (data) {
+              // Call API
+              console.log(data);
+            }
+          });
+    
+    
+          Validator({
+            form: '#form-2',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+              Validator.isEmail('#email'),
+              Validator.minLength('#password', 12),
+            ],
+            onSubmit: function (data) {
+              // Call API
+              console.log(data);
+            }
+          });
+        });
+  
+      </script>
+
+
+
+</body>
+</html>

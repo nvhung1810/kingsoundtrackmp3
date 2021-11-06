@@ -37,7 +37,7 @@ const app = {
         {
             name: 'Vòng Suy Nghĩ',
             singer: 'Mai Âm Nhạc',
-            path: './song/vong_suy_nghi.wav',
+            path: './song/vong_suy_nghi.mp3',
             image: './img/photo-1-16344006808131550761637.png'
         },
         {
@@ -191,7 +191,7 @@ const app = {
                         alt="" class="list__song-item-img" >
                         <div class="list__song-click">
                         <div class = "click__toggle-song">  
-                            <div class="click-toggle-play click" data-number = ${index}>
+                            <div class="click-toggle-play click"data-index = "${index}">
                                 <i class="click__icon-pause fas fa-pause"></i>
                                 <i class="click__icon-play fas fa-play"></i>
                             </div>
@@ -220,91 +220,52 @@ const app = {
         
         playList.innerHTML = htmls.join('')
     },
-    
-    // render2: function () {
-    //     const htmls2 = this.songs2.map((song, index) => {
+
+    // renderHistorySong: function() {
+    //     const htmlss = this.songs.map((song, index) => {
     //         return `
-    //         <li class="list__song-item ${index === this.currentIndex ? 'playing' : ''}" data-index = "${index}">
-    //             <div class="list__song-link">
-    //                     <img src="${song.image}" 
-    //                     alt="" class="list__song-item-img" >
-    //                     <div class="list__song-click">
-    //                     <div class = "click__toggle-song">  
-    //                         <div class="click-toggle-play click" data-number = ${index}>
-    //                             <i class="click__icon-pause fas fa-pause"></i>
-    //                             <i class="click__icon-play fas fa-play"></i>
-    //                         </div>
+    //             <div class="song-wrap ${index === this.currentIndex ? 'playing' : ''}">
+    //                 <div class="song-history">
+    //                 <div href="" class="link-img">
+    //                     <img src="${song.image}" alt="" class="img-song">
+    //                     <div class="click-toggle-play-fix click" data-index = "${index}">
+    //                         <i class="click__icon-pause-fix fas fa-pause"></i>
+    //                         <i class="click__icon-play-fix fas fa-play"></i>
     //                     </div>
-    //                         <i class="list__song-icon-like fas fa-heart"></i>
-    //                         <i class="list__song-icon-property fas fa-ellipsis-h"></i>
+    //                 </div>
+    //                 <div class="song-description-wrap">
+    //                     <div class="song-description">
+    //                         <a href="" class="link-name">${song.name}</a>
+    //                         <a href="" class="link-actor">${song.singer}</a>
     //                     </div>
-    //                 <a href = "" class="list__song-item-name">${song.name}</a>
-    //             <div>
-    //             <span class="list__song-item-des">${song.singer}</span>
-    //             <div class="icon__utilities-wrap">
-    //                 <div class="icon__utilities">
-    //                     <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgyMHYyMEgweiIvPgogICAgICAgIDxwYXRoIGZpbGw9InJnYigzNCwgMzQsIDM0KSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNNCA5aDEwdjJINFY5em0wIDRoMTB2Mkg0di0yem0wLThoOHYySDRWNXptMTAtNGw0IDMtNCAzVjF6Ii8+CiAgICA8L2c+Cjwvc3ZnPgo=" 
-    //                     alt="" class="icon__utilities-icon">
-    //                     <span class="icon__utilities-text">Add to Next up</span>
+    //                     <div class="icon-song-description">
+                            
+    //                         <i class="icon-history fas fa-play">
+    //                             <span class="text-icon">1.82M</span>
+    //                         </i>
+    //                         <a href="" class="link-like">
+    //                             <i class="icon-history icon-history-has-hover fas fa-heart">
+    //                                 <span class="text-icon">37.9K</span>
+    //                             </i>
+    //                         </a>
+    //                         <a href="" class="link-report">
+    //                             <i class="icon-history icon-history-has-hover fas fa-retweet">
+    //                                 <span class="text-icon">947</span>
+    //                             </i>
+    //                         </a>
+    //                         <a href="" class="link-comment">
+    //                             <i class="icon-history icon-history-has-hover fas fa-comment-alt">
+    //                             <span class="text-icon">586</span>
+    //                             </i>
+    //                         </a>
+    //                     </div>
     //                 </div>
-    //                 <div class="icon__utilities icon__utilities-fix">
-    //                     <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI+DQogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjAuMyAoNzg5MSkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+DQogICAgPHRpdGxlPkdyb3VwPC90aXRsZT4NCiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4NCiAgICA8ZGVmcy8+DQogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc2tldGNoOnR5cGU9Ik1TUGFnZSI+DQogICAgICAgIDxnIGlkPSJhZGQtdG8tcGxheWxpc3QiIHNrZXRjaDp0eXBlPSJNU0xheWVyR3JvdXAiIGZpbGw9InJnYigzNCwgMzQsIDM0KSI+DQogICAgICAgICAgICA8cGF0aCBkPSJNMTIsMyBMMTIsMSBMMTQsMSBMMTQsMyBMMTYsMyBMMTYsNSBMMTQsNSBMMTQsNyBMMTIsNyBMMTIsNSBMMTAsNSBMMTAsMyBMMTIsMyBaIE0wLDMgTDAsNSBMOCw1IEw4LDMgTDAsMyBaIE0wLDcgTDAsOSBMMTAsOSBMMTAsNyBMMCw3IFogTTAsMTEgTDAsMTMgTDEwLDEzIEwxMCwxMSBMMCwxMSBaIiBpZD0iUmVjdGFuZ2xlLTIwIiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIi8+DQogICAgICAgIDwvZz4NCiAgICA8L2c+DQo8L3N2Zz4NCg=="
-    //                     alt="" class="icon__utilities-icon">
-    //                     <span class="icon__utilities-text">Add to Next up</span>
-    //                 </div>
+    //                 </div>              
     //             </div>
-    //         </li>
     //         `
     //     })
-        
-    //     playList2.innerHTML = htmls2.join('')
+    //     songWrapHistory.innerHTML = htmlss.join('')
     // },
-
-    renderHistorySong: function() {
-        const htmlss = this.songs.map((song, index) => {
-            return `
-                <div class="song-wrap ${index === this.currentIndex ? 'playing' : ''}">
-                    <div class="song-history">
-                    <div href="" class="link-img">
-                        <img src="${song.image}" alt="" class="img-song">
-                        <div class="click-toggle-play-fix click" data-index = "${index}">
-                            <i class="click__icon-pause-fix fas fa-pause"></i>
-                            <i class="click__icon-play-fix fas fa-play"></i>
-                        </div>
-                    </div>
-                    <div class="song-description-wrap">
-                        <div class="song-description">
-                            <a href="" class="link-name">${song.name}</a>
-                            <a href="" class="link-actor">${song.singer}</a>
-                        </div>
-                        <div class="icon-song-description">
-                            
-                            <i class="icon-history fas fa-play">
-                                <span class="text-icon">1.82M</span>
-                            </i>
-                            <a href="" class="link-like">
-                                <i class="icon-history icon-history-has-hover fas fa-heart">
-                                    <span class="text-icon">37.9K</span>
-                                </i>
-                            </a>
-                            <a href="" class="link-report">
-                                <i class="icon-history icon-history-has-hover fas fa-retweet">
-                                    <span class="text-icon">947</span>
-                                </i>
-                            </a>
-                            <a href="" class="link-comment">
-                                <i class="icon-history icon-history-has-hover fas fa-comment-alt">
-                                <span class="text-icon">586</span>
-                                </i>
-                            </a>
-                        </div>
-                    </div>
-                    </div>              
-                </div>
-            `
-        })
-        songWrapHistory.innerHTML = htmlss.join('')
-    },
 
     // định nghĩa thuộc tính
     defineProperties: function () {
@@ -330,8 +291,6 @@ const app = {
 
         cdThumbAnimate.pause()
 
-
-        // xử lý click vô bài hát ở ul để chạy
         playList.onclick = function (e) {
             const songNode = e.target.closest('.click__icon-play')
             const itemSong = e.target.closest('.list__song-item')
@@ -339,17 +298,12 @@ const app = {
             console.log(btnClickToggle)
             _this.render()
             if (songNode || btnClickToggle || itemSong) {
-                _this.currentIndex = Number(btnClickToggle.getAttribute('data-number'))
+                _this.currentIndex = Number(btnClickToggle.dataset.index)
                 _this.loadCurrentSong()
                 _this.render()
                 audio.play()
-
-                // if(_this.isPlaying) {
-                //     audio.play()
-                // }
-
-                // khi song được pause 
-                audio.onpause = function () {
+                 // khi song được pause 
+                 audio.onpause = function () {
                     _this.isPlaying = false
                     player.classList.remove("playing")
                     cdThumbAnimate.pause()
@@ -379,35 +333,6 @@ const app = {
                     _this.prevSong()
                 }
                 audio.play()
-            }
-           
-        }
-
-        songWrapHistory.onclick = function (e) {
-            const songNode1 = e.target.closest('.click__icon-play-fix')
-            const songWrap = e.target.closest('.song-wrap')
-            const btnClickToggle1 = e.target.closest('.click-toggle-play-fix')
-            // _this.renderHistorySong()
-            if (songNode1 || songWrap || btnClickToggle1) {
-                _this.currentIndex = Number(btnClickToggle1.dataset.index)
-                _this.loadCurrentSong()
-                _this.renderHistorySong()
-                _this.render()
-                audio.play()
-
-                // khi song được pause 
-                audio.onpause = function () {
-                    _this.isPlaying = false
-                    player.classList.remove("playing")
-                    cdThumbAnimate.pause()
-                }
-    
-                // khi song được play 
-                audio.onplay = function () {
-                    _this.isPlaying = true
-                    player.classList.add('playing')
-                    cdThumbAnimate.play()
-                }
             }
            
         }
@@ -450,27 +375,6 @@ const app = {
             }
         }
 
-        // lắng nghe nút next
-        // btnNext.onclick = function() {
-        //     if (_this.isRandom) {
-        //         _this.playRandomSong()
-        //     }   else {
-        //         _this.nextSong()
-        //     }
-        //     audio.play()
-        // }
-
-        // // lắng nghe nút quay lại
-        // btnPrev.onclick = function() {
-        //     if (_this.isRandom) {
-        //         _this.playRandomSong()
-        //     }   else {
-        //         _this.prevSong()
-        //     }
-        //     audio.play()
-        // }
-
-        // lắng nghe nút random
         btnRandom.onclick = function() {
             _this.isRandom = !_this.isRandom
             btnRandom.classList.toggle('active', _this.isRandom)
@@ -490,6 +394,7 @@ const app = {
             _this.isRepeat = !_this.isRepeat
             btnRepeat.classList.toggle('active', _this.isRepeat)
         }
+        
 
     },
 
@@ -530,6 +435,7 @@ const app = {
         this.loadCurrentSong()
     },
 
+
     start: function() {
         // định nghĩa các thuộc tính
         this.defineProperties()
@@ -546,7 +452,7 @@ const app = {
         // render list nhạc 2
         // this.render2()
 
-        this.renderHistorySong()
+        // this.renderHistorySong()
     }
 }
 
