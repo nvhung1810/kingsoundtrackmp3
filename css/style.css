@@ -290,6 +290,7 @@ body {
   border-radius: 20px;
   font-size: 15px;
   display: flex;
+  margin-right: 20px;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -326,7 +327,7 @@ body {
 .music__header {
   margin-top: 38px;
   border-bottom: 1px solid #cbcbcb;
-  width: 1240px;
+  width: 1140px;
   overflow: hidden;
   height: 318px;
 }
@@ -367,7 +368,7 @@ body {
 }
 
 .list-song-wrap {
-  width: 100%;
+  width: 70%;
   padding-left: 10px;
   position: relative;
   left: 22px;
@@ -417,7 +418,7 @@ body {
 
 
 .song__list-item-song {
-  width: 610px;
+  width: 565px;
   height: 196px;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -467,7 +468,7 @@ body {
 
 /* singer view */
 .about__singer {
-  width: 826px;
+  width: 766px;
   margin: 20px;
   display: flex;
   align-items: center;
@@ -762,7 +763,7 @@ body {
   font-size: 40px;
   position: relative;
   top: -180px;
-  right: -800px;
+  right: -91%;
   color: rgb(185, 184, 184);
   height: 35px;
   width: 35px;
@@ -1120,7 +1121,7 @@ body {
   display: flex;
   align-items: center;
   height: 52px;
-  width: 100%;
+  width: 1154px;
   margin: 0 54px 0 54px;
 }
 
@@ -1144,10 +1145,10 @@ body {
 
 .control .btn-toggle-play {
   width: 40px;
-  height: 40px;
+  height: 33px;
   border-radius: 50%;
   padding-left: 2px;
-  font-size: 20px;
+  font-size: 16px;
   color: #B17874;
   display: flex;
   align-items: center;
@@ -1155,6 +1156,9 @@ body {
   background-color: #FFE8E1;
 }
 
+.music__bar-follow {
+  width: 104px;
+}
 
 .control .icon-down-sound {
   display: none;
